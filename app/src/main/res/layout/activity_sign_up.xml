@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".signup.SignUpActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                >
+                <ImageView
+                    android:id="@+id/app_logo_iv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="@string/content_description_for_agora_logo"
+                    android:src="@drawable/agora"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Create Account"
+                    android:textSize="30dp"
+                    app:fontFamily="cursive"
+                    android:textColor="@color/greenTint"
+                    android:layout_marginLeft="20dp"
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greenTint"
+                android:text="Username"
+                android:layout_marginTop="40dp"
+                ></TextView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_user_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your username here"
+                app:boxStrokeColor="@color/colorPrimary"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greenTint"
+                android:text="Name"
+                android:layout_marginTop="10dp"
+                ></TextView>
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_first_name"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                app:boxStrokeColor="@color/colorPrimary"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greenTint"
+                android:text="Email"
+                android:layout_marginTop="10dp"
+                ></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Email"
+                app:boxStrokeColor="@color/colorPrimary"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greenTint"
+                android:text="Password"
+                android:layout_marginTop="10dp"
+                ></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/signup_password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your password"
+                app:boxStrokeColor="@color/colorPrimary"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/greenTint"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greenTint"
+                android:text="Security Question"
+                android:layout_marginTop="10dp"
+                ></TextView>
+
+
+            <RelativeLayout
+                android:id="@+id/security_drop_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/signup_password"
+                >
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sign_up_security_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:prompt="Enter Security Question"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greenTint"
+                android:text="Security Answer"
+                android:layout_marginTop="10dp"
+                ></TextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/security_answer"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/security_question_answer"
+                app:boxStrokeColor="@color/colorPrimary"
+                android:layout_marginBottom="20dp"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                style="@style/MainButtonStyle"
+                android:layout_marginTop="16dp"
+                android:text="Create Account"
+                app:backgroundTint="@color/yellowTint"
+                />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</layout>
