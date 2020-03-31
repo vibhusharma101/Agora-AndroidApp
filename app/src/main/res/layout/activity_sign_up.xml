@@ -44,6 +44,7 @@
                     app:fontFamily="cursive"
                     android:textColor="@color/greenTint"
                     android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
                     />
 
             </LinearLayout>
@@ -55,7 +56,7 @@
                 android:textColor="@color/greenTint"
                 android:text="Username"
                 android:layout_marginTop="40dp"
-                ></TextView>
+               />
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/signup_user_name"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -78,7 +79,7 @@
                 android:textColor="@color/greenTint"
                 android:text="Name"
                 android:layout_marginTop="10dp"
-                ></TextView>
+                />
 
 
 
@@ -174,7 +175,7 @@
                     android:id="@+id/sign_up_security_question"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:prompt="Enter Security Question"
+
                     />
             </RelativeLayout>
 

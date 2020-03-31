@@ -26,4 +26,19 @@
     <item name="android:textColor">@android:color/white</item>
     <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
   </style>
+
+  <!-- Navigation View Style -->
+  <style name="NavigationDrawerStyle">
+    <item name="android:textSize">20sp</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:fontFamily">thin</item>
+    <item name="android:listPreferredItemHeightSmall">60dp</item><!-- item size in menu-->
+    <item name="listPreferredItemHeightSmall">60dp</item><!-- item size in menu-->
+  </style>
+  <style name="AppThemeB" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
 </resources>
+

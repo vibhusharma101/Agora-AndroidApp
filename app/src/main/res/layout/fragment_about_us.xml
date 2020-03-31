@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AboutUsFragment"
+    >
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha=".5"
+        android:src ="@drawable/agora"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:layout_margin="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="40dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+
+
+            >
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/agora"
+                android:layout_gravity="center_horizontal"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textSize="40sp"
+                app:fontFamily="cursive"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="25dp"
+        android:text="Agora vote is a voting platform where users can create elections and invite friends to cast their votes.It supports a wide range of voting algorithms some of which are Majority, Egalitarian, Australian STV just to name a few"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+            android:textAlignment="center"
+        />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="@color/colorAccent"
+                android:text="Visit Website"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/internet"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="13dp"
+                android:elevation="2dp"
+                />
+
+
+
+        </FrameLayout>
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

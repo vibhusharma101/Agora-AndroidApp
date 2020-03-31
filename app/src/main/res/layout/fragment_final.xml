@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.createElection.FinalFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin= "20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="0dp"
+            >
+            <ImageView
+                android:id="@+id/app_logo_iv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/content_description_for_agora_logo"
+                android:src="@drawable/agora"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="More Options"
+                android:textSize="30dp"
+                app:fontFamily="cursive"
+                android:textColor="@color/greenTint"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Invite Voters"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Get Real Time Results"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greenTint"
+            android:text="Secrecy of Ballots"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            />
+
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+
+            >
+            <androidx.appcompat.widget.AppCompatSpinner
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                />
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/greenTint"
+            android:text="Visibility of list of Voters"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            />
+
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+
+            >
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/sign_up_security_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorPrimaryDark"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_send_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/Create_Election"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
