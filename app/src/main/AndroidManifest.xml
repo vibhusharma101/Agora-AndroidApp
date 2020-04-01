@@ -15,11 +15,6 @@
         <activity android:name=".ui.InviteVotersActivity" />
         <activity android:name=".ui.ElectionDetailsActivity" />
         <activity android:name=".ui.createElection.CreateElection">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".ui.ForgotPasswordActivity" />
         <activity android:name=".ui.TwoStepAuthActivity" />
