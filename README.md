@@ -15,6 +15,9 @@ I have used yellow colour in all the confirm buttons and used green for all the 
 
 <img width="935" alt="Screenshot 2020-03-28 at 7 05 49 AM" src="https://user-images.githubusercontent.com/39101226/78630679-04ea4900-78b8-11ea-8d29-740da982535b.png">
 
+==>Splash screen animation
+![ezgif com-video-to-gif (12)](https://user-images.githubusercontent.com/39101226/78631345-c8b7e800-78b9-11ea-9d1a-9e971303c2b2.gif)
+
 
 
 2)Login Page
