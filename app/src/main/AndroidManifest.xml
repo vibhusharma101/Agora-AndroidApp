@@ -9,18 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppThemeB">
-        <activity android:name=".ui.HomeActivity"></activity>
+        <activity android:name=".ui.launcher.WalkthroughActivity"></activity>
+        <activity android:name=".ui.HomeActivity" />
         <activity android:name=".ui.profile.UpdateProfileActivity" />
         <activity android:name=".ui.profile.ProfileActivity" />
         <activity android:name=".ui.InviteVotersActivity" />
         <activity android:name=".ui.ElectionDetailsActivity" />
-        <activity android:name=".ui.createElection.CreateElection">
-        </activity>
+        <activity android:name=".ui.createElection.CreateElection"></activity>
         <activity android:name=".ui.ForgotPasswordActivity" />
         <activity android:name=".ui.TwoStepAuthActivity" />
         <activity android:name=".ui.SignUpActivity" />
         <activity android:name=".ui.LoginActivity" />
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.launcher.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

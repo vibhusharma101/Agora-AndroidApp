@@ -5,15 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 
-class MyViewPagerAdapter(var layouts:Array<Int>) : PagerAdapter() {
+class MyViewPagerAdapter(var layouts:Array<Int>,var context:Context) : PagerAdapter() {
 
     private var layoutInflater:LayoutInflater?=null
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
-        layoutInflater = container.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+        layoutInflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var view = layoutInflater!!.inflate(layouts[position],container,false)
-        container.addView(view)
+        var vp:ViewPager  = container as ViewPager
+        vp.addView(view,0)
         return view
     }
 
@@ -27,8 +29,9 @@ class MyViewPagerAdapter(var layouts:Array<Int>) : PagerAdapter() {
     }
 
     override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
+        var vp: ViewPager = container as ViewPager
         var view = `object` as View
-        container.removeView(view)
+        vp.removeView(view)
     }
 
 
