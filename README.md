@@ -3,7 +3,10 @@
 This is the skeleton which I have made for the Agora android app.
 You will find all the layouts in layout folder 
 and also layouts for menu in menu bar.
+
 I have also defined some adapters which you can also see, as I have explained in my proposal.
+
+I have also set up  Room Database and I have created User object and linked it with Room database also created recylcer view adpaters.
 
 I have used mainly two colours in my mockups yellow and green the colours which are present in the logo to maintain a uniform colour profile of the app which matches the logo of the org.
 
